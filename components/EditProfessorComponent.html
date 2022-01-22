@@ -1,0 +1,951 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>sgpc documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">sgpc documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  EditProfessorComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/componentes/edit-professor/edit-professor.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-edit-professor</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./edit-professor.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./edit-professor.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#form" >form</a>
+                            </li>
+                            <li>
+                                <a href="#id" >id</a>
+                            </li>
+                            <li>
+                                <a href="#tecnologias" >tecnologias</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#editarProfessor" >editarProfessor</a>
+                            </li>
+                            <li>
+                                <a href="#mostrarTecnologias" >mostrarTecnologias</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(service: <a href="../injectables/ProfessorService.html" target="_self">ProfessorService</a>, fb: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, route: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, activedroute: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, tecnologiaService: <a href="../injectables/TecnologiasService.html" target="_self">TecnologiasService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/componentes/edit-professor/edit-professor.component.ts:17</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>service</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ProfessorService.html" target="_self" >ProfessorService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>fb</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>route</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>activedroute</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>tecnologiaService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TecnologiasService.html" target="_self" >TecnologiasService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="editarProfessor"></a>
+                    <span class="name">
+                        <span ><b>editarProfessor</b></span>
+                        <a href="#editarProfessor"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>editarProfessor(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="84"
+                            class="link-to-prism">src/app/componentes/edit-professor/edit-professor.component.ts:84</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="mostrarTecnologias"></a>
+                    <span class="name">
+                        <span ><b>mostrarTecnologias</b></span>
+                        <a href="#mostrarTecnologias"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>mostrarTecnologias()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="104"
+                            class="link-to-prism">src/app/componentes/edit-professor/edit-professor.component.ts:104</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="49"
+                            class="link-to-prism">src/app/componentes/edit-professor/edit-professor.component.ts:49</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="form"></a>
+                    <span class="name">
+                        <span ><b>form</b></span>
+                        <a href="#form"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/componentes/edit-professor/edit-professor.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="id"></a>
+                    <span class="name">
+                        <span ><b>id</b></span>
+                        <a href="#id"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/componentes/edit-professor/edit-professor.component.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="tecnologias"></a>
+                    <span class="name">
+                        <span ><b>tecnologias</b></span>
+                        <a href="#tecnologias"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Tecnologias.html" target="_self" >Tecnologias[]</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/componentes/edit-professor/edit-professor.component.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Tecnologias } from &#x27;./../../modelos/Tecnologias&#x27;;
+import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { Professor } from &#x27;src/app/modelos/Professor&#x27;;
+import { ProfessorService } from &#x27;./../../servicos/professor.service&#x27;;
+import { FormBuilder, FormGroup, Validators } from &#x27;@angular/forms&#x27;;
+import { ActivatedRoute, Router } from &#x27;@angular/router&#x27;;
+import { TecnologiasService } from &#x27;src/app/servicos/tecnologias.service&#x27;;
+
+@Component({
+  selector: &#x27;app-edit-professor&#x27;,
+  templateUrl: &#x27;./edit-professor.component.html&#x27;,
+  styleUrls: [&#x27;./edit-professor.component.css&#x27;],
+})
+export class EditProfessorComponent implements OnInit {
+  form: FormGroup;
+  id!: string;
+  tecnologias!: Tecnologias[];
+
+  constructor(
+    private service: ProfessorService,
+    private fb: FormBuilder,
+    private route: Router,
+    private activedroute: ActivatedRoute,
+    private tecnologiaService: TecnologiasService
+  ) {
+    this.form &#x3D; this.fb.group({
+      nome: [
+        &#x27;&#x27;,
+        [
+          Validators.required,
+          Validators.minLength(3),
+          Validators.maxLength(100),
+          Validators.pattern(/^(?!À-Ö)[A-Za-z\&#x27;,\-àáâãçèéêẽíôõóúû ]*$/),
+        ],
+      ],
+      formacao: [
+        &#x27;&#x27;,
+        [
+          Validators.required,
+          Validators.pattern(/^(?!À-Ö)[A-Za-z\&#x27;,\-àáâãçèéêẽíôõóúû ]*$/),
+        ],
+      ],
+      email: [&#x27;&#x27;, [Validators.email, Validators.required]],
+      contato: [&#x27;&#x27;, [Validators.required]],
+      tecnologia: [&#x27;&#x27;],
+    });
+  }
+
+  ngOnInit(): void {
+    // let marcados &#x3D; this.formprof.techCheckBox
+    // console.log(marcados);
+
+    this.mostrarTecnologias();
+
+    const id &#x3D; &lt;any&gt;this.activedroute.snapshot.params[&#x27;id&#x27;];
+    this.service.listarUmProfessor(id).subscribe((res: any) &#x3D;&gt; {
+      let resultado &#x3D; { id: res.id, ...res.data() };
+      this.id &#x3D; resultado.id;
+
+      let marcados &#x3D; resultado.tecnologia;
+      console.log(marcados);
+
+      for(let i &#x3D; 0; i &lt; marcados.legth; i++){
+        marcados[i]
+        for(let i &#x3D; 0; this.tecnologias.length; i++){
+          this.tecnologias[i].tecnologia
+          if(this.tecnologias[i].tecnologia &#x3D;&#x3D;&#x3D; marcados[i]){
+            var checkbox &#x3D; document.getElementsByTagName(&#x27;tecnologias&#x27;)
+          }
+        }
+      }
+
+
+      this.form.patchValue({
+        nome: resultado.nome,
+        formacao: resultado.formacao,
+        email: resultado.email,
+        contato: resultado.contato,
+        tecnologia: resultado.tecnologia.tecnologia,
+      });
+    });
+  }
+
+  editarProfessor(id: string) {
+    const professor: any &#x3D; {
+      nome: this.form.value.nome,
+      formacao: this.form.value.formacao,
+      email: this.form.value.email,
+      contato: this.form.value.contato,
+      tecnologia: this.form.value.tecnologia,
+    };
+    this.service.editarProfessor(id, professor).then(
+      () &#x3D;&gt; {
+        this.form.reset();
+        console.log(&#x27;Professor editado com sucesso&#x27;);
+        this.route.navigate([&#x27;/professor/lista&#x27;]);
+      },
+      (error) &#x3D;&gt; {
+        console.log(error);
+      }
+    );
+  }
+
+  mostrarTecnologias() {
+    this.tecnologiaService.listarTecnologia().subscribe((doc) &#x3D;&gt; {
+      this.tecnologias &#x3D; [];
+      console.log(this.tecnologias);
+      doc.forEach((tecnologia: any) &#x3D;&gt; {
+        this.tecnologias.push({
+          id: tecnologia.payload.doc.id,
+          ...tecnologia.payload.doc.data(),
+        });
+      });
+    });
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;app-nav&gt;&lt;/app-nav&gt;
+&lt;form [formGroup]&#x3D;&quot;form&quot;&gt;
+  &lt;div class&#x3D;&quot;container-form&quot;&gt;
+    &lt;h2&gt;Editar Professor&lt;/h2&gt;
+    &lt;div class&#x3D;&quot;label-float my-3&quot;&gt;
+      &lt;input type&#x3D;&quot;text&quot; placeholder&#x3D;&quot; &quot; formControlName&#x3D;&#x27;nome&#x27; name&#x3D;&#x27;nome&#x27;&gt;
+      &lt;label&gt;Nome&lt;/label&gt;
+      &lt;div *ngIf&#x3D;&quot;!form.controls[&#x27;nome&#x27;].pristine &amp;&amp; form.controls[&#x27;nome&#x27;].errors&quot;&gt;
+        &lt;p *ngIf&#x3D;&quot;form.controls[&#x27;nome&#x27;].hasError(&#x27;required&#x27;)&quot; class&#x3D;&quot;text-danger&quot;&gt;
+          Nome é obrigatório.
+        &lt;/p&gt;
+        &lt;p *ngIf&#x3D;&quot;form.controls[&#x27;nome&#x27;].hasError(&#x27;minlength&#x27;)&quot; class&#x3D;&quot;text-danger&quot;&gt;
+          Nome deve ter no mínimo 3 caracteres.
+        &lt;/p&gt;
+        &lt;p *ngIf&#x3D;&quot;form.controls[&#x27;nome&#x27;].hasError(&#x27;maxlength&#x27;)&quot; class&#x3D;&quot;text-danger&quot;&gt;
+          Nome deve ter no máximo 100 caracteres.
+        &lt;/p&gt;
+        &lt;p *ngIf&#x3D;&quot;form.controls[&#x27;nome&#x27;].hasError(&#x27;pattern&#x27;)&quot; class&#x3D;&quot;text-danger&quot;&gt;
+          Nome deve ter apenas letras.
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;label-float my-3&quot;&gt;
+      &lt;input type&#x3D;&quot;text&quot; placeholder&#x3D;&quot; &quot; formControlName&#x3D;&#x27;formacao&#x27;&gt;
+      &lt;label&gt;Formação&lt;/label&gt;
+      &lt;div *ngIf&#x3D;&quot;!form.controls[&#x27;formacao&#x27;].pristine &amp;&amp; form.controls[&#x27;formacao&#x27;].errors&quot;&gt;
+        &lt;p *ngIf&#x3D;&quot;form.controls[&#x27;formacao&#x27;].hasError(&#x27;required&#x27;)&quot; class&#x3D;&quot;text-danger&quot;&gt;
+          Formação é obrigatório.
+        &lt;/p&gt;
+        &lt;p *ngIf&#x3D;&quot;form.controls[&#x27;formacao&#x27;].hasError(&#x27;pattern&#x27;)&quot; class&#x3D;&quot;text-danger&quot;&gt;
+          Formação deve ter apenas letras.
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;label-float my-3&quot;&gt;
+      &lt;input type&#x3D;&quot;email&quot; placeholder&#x3D;&quot; &quot; formControlName&#x3D;&#x27;email&#x27;&gt;
+      &lt;label&gt;Email&lt;/label&gt;
+      &lt;div *ngIf&#x3D;&quot;!form.controls[&#x27;email&#x27;].pristine &amp;&amp; form.controls[&#x27;email&#x27;].errors&quot;&gt;
+        &lt;p *ngIf&#x3D;&quot;form.controls[&#x27;email&#x27;].hasError(&#x27;email&#x27;)&quot; class&#x3D;&quot;text-danger&quot;&gt;
+          Digite um e-mail válido.
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;label-float my-3&quot;&gt;
+      &lt;input type&#x3D;&quot;text&quot; placeholder&#x3D;&quot; &quot; formControlName&#x3D;&#x27;contato&#x27;&gt;
+      &lt;label&gt;Contato&lt;/label&gt;
+      &lt;div *ngIf&#x3D;&quot;!form.controls[&#x27;contato&#x27;].pristine &amp;&amp; form.controls[&#x27;formacao&#x27;].errors&quot;&gt;
+        &lt;p *ngIf&#x3D;&quot;form.controls[&#x27;contato&#x27;].hasError(&#x27;required&#x27;)&quot; class&#x3D;&quot;text-danger&quot;&gt;
+          Contato é obrigatório.
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;title-checkbox text-start mb-3&quot;&gt;Tecnologias&lt;/div&gt;
+    &lt;div class&#x3D;&quot;row&quot;&gt;
+      &lt;div class&#x3D;&quot;col-lg-4&quot; *ngFor&#x3D;&quot;let item of tecnologias&quot;&gt;
+        &lt;div class&#x3D;&quot;check-container&quot;&gt;
+          &lt;input type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;html&quot; class&#x3D;&quot;checkbox&quot; formControlName&#x3D;&#x27;tecnologia&#x27; name &#x3D;&#x27;tecnologia&#x27; value&#x3D;&quot;{{item.tecnologia}}&quot;&gt;
+          &lt;label&gt;{{item.tecnologia}}&lt;/label&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;button-container my-3&quot;&gt;
+      &lt;button class&#x3D;&quot;btn btn-cor&quot; [disabled]&#x3D;&#x27;!form.valid&#x27; (click)&#x3D;&quot;editarProfessor(id)&quot;&gt;Salvar&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./edit-professor.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">* {
+    background-color: #E6F4F5;
+  }
+
+  .container-form {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 665px;
+    margin-left: 450px;
+  }
+
+  h2 {
+    color: #F7C234;
+    font-weight: bold;
+  }
+
+  .label-float {
+    position: relative;
+    padding-top: 13px;
+  }
+
+  .label-float input {
+    border: 0;
+    border-bottom: 2px solid #28A7D0;
+    outline: none;
+    min-width: 665px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -webkit-appearance: none;
+    border-radius: 0;
+  }
+
+  .label-float input:focus {
+    border-bottom: 2px solid #28A7D0;
+  }
+
+  .label-float input::placeholder {
+    color: transparent;
+  }
+
+  .label-float label {
+    color: #28A7D0;
+    font-weight: 600;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+  }
+
+  .label-float input:focus+label,
+  .label-float input:not(:placeholder-shown)+label {
+    font-size: 13px;
+    margin-top: 0;
+    color: #28A7D0;
+  }
+
+  .title-checkbox {
+    color: #28A7D0;
+    font-weight: 600;
+    width: 100%;
+  }
+
+  .check-container {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-left: 50px;
+  }
+
+  .checkbox {
+    cursor: pointer;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #28A7D0;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    margin-right: 10px;
+  }
+
+  .checks label {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .checkbox::before {
+    content: &#x27;&#x27;;
+    width: 5px;
+    height: 5px;
+    opacity: 0;
+    position: absolute;
+    background: transparent;
+    border: 2px solid #000;
+    border-left: 0;
+    border-top: 0;
+    width: 5px;
+    height: 9px;
+    transform: rotate(45deg);
+    top: 1;
+  }
+
+  .checkbox:checked:before {
+    opacity: 1;
+  }
+
+  .btn {
+    width: 150px;
+    margin: 10px;
+  }
+
+  .btn:hover {
+    background-color: #279cc4;
+  }
+
+  .btn-cor {
+    background-color: #28A7D0;
+    color: #fff;
+  }
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><app-nav></app-nav><form [formGroup]="form">  <div class="container-form">    <h2>Editar Professor</h2>    <div class="label-float my-3">      <input type="text" placeholder=" " formControlName=\'nome\' name=\'nome\'>      <label>Nome</label>      <div *ngIf="!form.controls[\'nome\'].pristine && form.controls[\'nome\'].errors">        <p *ngIf="form.controls[\'nome\'].hasError(\'required\')" class="text-danger">          Nome é obrigatório.        </p>        <p *ngIf="form.controls[\'nome\'].hasError(\'minlength\')" class="text-danger">          Nome deve ter no mínimo 3 caracteres.        </p>        <p *ngIf="form.controls[\'nome\'].hasError(\'maxlength\')" class="text-danger">          Nome deve ter no máximo 100 caracteres.        </p>        <p *ngIf="form.controls[\'nome\'].hasError(\'pattern\')" class="text-danger">          Nome deve ter apenas letras.        </p>      </div>    </div>    <div class="label-float my-3">      <input type="text" placeholder=" " formControlName=\'formacao\'>      <label>Formação</label>      <div *ngIf="!form.controls[\'formacao\'].pristine && form.controls[\'formacao\'].errors">        <p *ngIf="form.controls[\'formacao\'].hasError(\'required\')" class="text-danger">          Formação é obrigatório.        </p>        <p *ngIf="form.controls[\'formacao\'].hasError(\'pattern\')" class="text-danger">          Formação deve ter apenas letras.        </p>      </div>    </div>    <div class="label-float my-3">      <input type="email" placeholder=" " formControlName=\'email\'>      <label>Email</label>      <div *ngIf="!form.controls[\'email\'].pristine && form.controls[\'email\'].errors">        <p *ngIf="form.controls[\'email\'].hasError(\'email\')" class="text-danger">          Digite um e-mail válido.        </p>      </div>    </div>    <div class="label-float my-3">      <input type="text" placeholder=" " formControlName=\'contato\'>      <label>Contato</label>      <div *ngIf="!form.controls[\'contato\'].pristine && form.controls[\'formacao\'].errors">        <p *ngIf="form.controls[\'contato\'].hasError(\'required\')" class="text-danger">          Contato é obrigatório.        </p>      </div>    </div>    <div class="title-checkbox text-start mb-3">Tecnologias</div>    <div class="row">      <div class="col-lg-4" *ngFor="let item of tecnologias">        <div class="check-container">          <input type="checkbox" id="html" class="checkbox" formControlName=\'tecnologia\' name =\'tecnologia\' value="{{item.tecnologia}}">          <label>{{item.tecnologia}}</label>        </div>      </div>    </div>    <div class="button-container my-3">      <button class="btn btn-cor" [disabled]=\'!form.valid\' (click)="editarProfessor(id)">Salvar</button>    </div>  </div></form></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CategoriasComponent', 'selector': 'app-categorias'},{'name': 'EditProfessorComponent', 'selector': 'app-edit-professor'},{'name': 'EditTurmaComponent', 'selector': 'app-edit-turma'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'FormProfessorComponent', 'selector': 'app-form-professor'},{'name': 'FormTurmaComponent', 'selector': 'app-form-turma'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'ListaProfessorComponent', 'selector': 'app-lista-professor'},{'name': 'ListaTurmaComponent', 'selector': 'app-lista-turma'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'NavComponent', 'selector': 'app-nav'},{'name': 'TecnologiasComponent', 'selector': 'app-tecnologias'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'EditProfessorComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'EditProfessorComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
