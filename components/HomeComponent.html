@@ -569,8 +569,10 @@ export class HomeComponent implements OnInit {
 
     <div class="tab-pane fade " id="c-templateData">
         <pre class="line-numbers"><code class="language-html">&lt;app-nav&gt;&lt;/app-nav&gt;
+&lt;h1 class&#x3D;&quot;text-center&quot; style&#x3D;&quot;color: #f7c234; padding: 15px;margin-left: 15%;&quot;&gt;Gerenciamento de Professores e Cursos&lt;/h1&gt;
 &lt;div class&#x3D;&quot;container d-flex&quot;&gt;
   &lt;div class&#x3D;&quot;container-aviso professor&quot;&gt;
+    &lt;h3&gt;Status Professores&lt;/h3&gt;
     &lt;table class&#x3D;&quot;table&quot;&gt;
       &lt;thead class&#x3D;&quot;thead&quot;&gt;
         &lt;tr&gt;
@@ -578,58 +580,39 @@ export class HomeComponent implements OnInit {
           &lt;th&gt;Status de disponibilidade&lt;/th&gt;
         &lt;/tr&gt;
       &lt;/thead&gt;
-      &lt;tbody style&#x3D;&quot;border-top: none;&quot;  *ngFor&#x3D;&quot;let professor of professores&quot;&gt;
+      &lt;tbody style&#x3D;&quot;border-top: none;&quot; *ngFor&#x3D;&quot;let professor of professores&quot;&gt;
         &lt;tr *ngIf&#x3D;&quot;professor.status &#x3D;&#x3D; true &amp;&amp; professor.disponibilidade &#x3D;&#x3D; 100&quot;&gt;
           &lt;td&gt;{{professor.nome}}&lt;/td&gt;
           &lt;td class&#x3D;&quot;text-center&quot;&gt;&lt;img src&#x3D;&quot;../../../assets/img/disponivel.png&quot; alt&#x3D;&quot;&quot;&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr *ngIf&#x3D;&quot;professor.status &#x3D;&#x3D; true &amp;&amp; professor.disponibilidade &#x3D;&#x3D; 50&quot;&gt;
+          &lt;td&gt;{{professor.nome}}&lt;/td&gt;
+          &lt;td class&#x3D;&#x27;text-center&#x27;&gt;&lt;img src&#x3D;&#x27;assets/img/projetofinal.png&#x27;&gt;&lt;/td&gt;
         &lt;/tr&gt;
       &lt;/tbody&gt;
     &lt;/table&gt;
   &lt;/div&gt;
   &lt;div class&#x3D;&quot;container-aviso turma&quot;&gt;
+    &lt;h3&gt;Turmas em atividade&lt;/h3&gt;
     &lt;table class&#x3D;&quot;table&quot;&gt;
       &lt;thead class&#x3D;&quot;thead&quot;&gt;
         &lt;tr&gt;
           &lt;th&gt;Turmas&lt;/th&gt;
           &lt;th&gt;Data início&lt;/th&gt;
-          &lt;th class&#x3D;&quot;text-center&quot;&gt;Andamento&lt;/th&gt;
+          &lt;th&gt;Data Final&lt;/th&gt;
         &lt;/tr&gt;
       &lt;/thead&gt;
       &lt;tbody style&#x3D;&quot;border-top: none;&quot; *ngFor&#x3D;&quot;let turma of turmas&quot;&gt;
-        &lt;tr&gt;
+        &lt;tr *ngIf&#x3D;&quot;turma.status &#x3D;&#x3D; true&quot;&gt;
           &lt;td&gt;{{turma.nome}}&lt;/td&gt;
           &lt;td&gt;{{turma.dataDeInicioCurso | dateTime}}&lt;/td&gt;
-          &lt;td class&#x3D;&quot;text-center&quot;&gt;&lt;img src&#x3D;&quot;../../../assets/img/projetofinal.png&quot; alt&#x3D;&quot;&quot;&gt;&lt;/td&gt;
+          &lt;td&gt;{{turma.dataDeTerminoCurso | dateTime}}&lt;/td&gt;
         &lt;/tr&gt;
       &lt;/tbody&gt;
     &lt;/table&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class&#x3D;&quot;container-notificacao&quot;&gt;
-  &lt;div&gt;
-    &lt;div class&#x3D;&quot;notificacao note1&quot;&gt;
-      &lt;img src&#x3D;&quot;../../../assets/img/sino.png&quot; alt&#x3D;&quot;&quot;&gt;
-      &lt;h5&gt;BCW9:  faltam 5 dias para o final do curso&lt;/h5&gt;
-    &lt;/div&gt;
-    &lt;div class&#x3D;&quot;notificacao&quot;&gt;
-      &lt;img src&#x3D;&quot;../../../assets/img/sino.png&quot;&gt;
-      &lt;h5&gt;BCW8:  faltam 4 dias para o final do curso&lt;/h5&gt;
-    &lt;/div&gt;
-    &lt;div class&#x3D;&quot;notificacao&quot;&gt;
-      &lt;img src&#x3D;&quot;../../../assets/img/sino.png&quot;&gt;
-      &lt;h5&gt;BCW7:  faltam 3 dias para o final do curso&lt;/h5&gt;
-    &lt;/div&gt;
-    &lt;div class&#x3D;&quot;notificacao&quot;&gt;
-      &lt;img src&#x3D;&quot;../../../assets/img/sino.png&quot;&gt;
-      &lt;h5&gt;BCW5:  faltam 2 dias para o final do curso&lt;/h5&gt;
-    &lt;/div&gt;
-    &lt;div class&#x3D;&quot;notificacao&quot;&gt;
-      &lt;img src&#x3D;&quot;../../../assets/img/sino.png&quot;&gt;
-      &lt;h5&gt;BCW5:  faltam 1 dias para o final do curso&lt;/h5&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
 </code></pre>
     </div>
 
@@ -640,21 +623,30 @@ export class HomeComponent implements OnInit {
                 <pre class="line-numbers"><code class="language-scss">@import url(&#x27;https://fonts.googleapis.com/css2?family&#x3D;Quicksand&amp;display&#x3D;swap&#x27;);
 
 .container-aviso {
-  background-color: #ffff ;
-  height: 375px;
-  width: 505px;
+  background-color: #ffff;
+  height: 600px;
+  width: 420px;
   border-radius: 20px;
   margin-top: 170px;
-  padding: 30px!important;
+  padding: 30px !important;
   font-family: &#x27;Quicksand&#x27;, sans-serif;
   /* border: 2px solid #28a7d0; */
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   overflow: scroll;
 }
 
+tr:hover {
+  background-color: #28a7d0;
+  font-weight: 600;
+  color: #fff
+}
+
 .container {
   justify-content: space-around;
   margin-right: 7%;
+  background-image: url(&quot;../../../assets/img/imagem-home.png&quot;);
+  background-repeat: no-repeat;
+  background-position-x: 15%;
 }
 
 .table {
@@ -668,33 +660,7 @@ export class HomeComponent implements OnInit {
 
 .thead tr {
   border-bottom: 2px solid #eef0f2;
-}
-
-.container-notificacao {
-  width: 540px;
-  height: 230px;
-  background-color: #ffff ;
-  margin-left: 45%;
-  margin-top: 67px;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  overflow: scroll;
-  /* border: 2px solid #28a7d0; */
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.notificacao {
-  width: 460px;
-  height: 70px;
-  background-color: #FECE2F;
-  border-radius: 6px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-  margin: 20px 0px;
-  display: flex;
-  align-items: center;
+  font-weight: 600;
 }
 
 .note1 {
@@ -709,7 +675,20 @@ h5 {
   margin-left: 12px;
   justify-content: center;
   text-align: center;
+}
 
+@media screen and (max-width:1440px) {
+  .container {
+    margin-left: 230px;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .container-aviso {
+    height: 275px;
+    width: 405px;
+  }
 }
 </code></pre>
     </div>
@@ -739,7 +718,7 @@ h5 {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><app-nav></app-nav><div class="container d-flex">  <div class="container-aviso professor">    <table class="table">      <thead class="thead">        <tr>          <th>Professores</th>          <th>Status de disponibilidade</th>        </tr>      </thead>      <tbody style="border-top: none;"  *ngFor="let professor of professores">        <tr *ngIf="professor.status == true && professor.disponibilidade == 100">          <td>{{professor.nome}}</td>          <td class="text-center"><img src="../../../assets/img/disponivel.png" alt=""></td>        </tr>      </tbody>    </table>  </div>  <div class="container-aviso turma">    <table class="table">      <thead class="thead">        <tr>          <th>Turmas</th>          <th>Data início</th>          <th class="text-center">Andamento</th>        </tr>      </thead>      <tbody style="border-top: none;" *ngFor="let turma of turmas">        <tr>          <td>{{turma.nome}}</td>          <td>{{turma.dataDeInicioCurso | dateTime}}</td>          <td class="text-center"><img src="../../../assets/img/projetofinal.png" alt=""></td>        </tr>      </tbody>    </table>  </div></div><div class="container-notificacao">  <div>    <div class="notificacao note1">      <img src="../../../assets/img/sino.png" alt="">      <h5>BCW9:  faltam 5 dias para o final do curso</h5>    </div>    <div class="notificacao">      <img src="../../../assets/img/sino.png">      <h5>BCW8:  faltam 4 dias para o final do curso</h5>    </div>    <div class="notificacao">      <img src="../../../assets/img/sino.png">      <h5>BCW7:  faltam 3 dias para o final do curso</h5>    </div>    <div class="notificacao">      <img src="../../../assets/img/sino.png">      <h5>BCW5:  faltam 2 dias para o final do curso</h5>    </div>    <div class="notificacao">      <img src="../../../assets/img/sino.png">      <h5>BCW5:  faltam 1 dias para o final do curso</h5>    </div>  </div></div></div>'
+        var COMPONENT_TEMPLATE = '<div><app-nav></app-nav><h1 class="text-center" style="color: #f7c234; padding: 15px;margin-left: 15%;">Gerenciamento de Professores e Cursos</h1><div class="container d-flex">  <div class="container-aviso professor">    <h3>Status Professores</h3>    <table class="table">      <thead class="thead">        <tr>          <th>Professores</th>          <th>Status de disponibilidade</th>        </tr>      </thead>      <tbody style="border-top: none;" *ngFor="let professor of professores">        <tr *ngIf="professor.status == true && professor.disponibilidade == 100">          <td>{{professor.nome}}</td>          <td class="text-center"><img src="../../../assets/img/disponivel.png" alt=""></td>        </tr>        <tr *ngIf="professor.status == true && professor.disponibilidade == 50">          <td>{{professor.nome}}</td>          <td class=\'text-center\'><img src=\'assets/img/projetofinal.png\'></td>        </tr>      </tbody>    </table>  </div>  <div class="container-aviso turma">    <h3>Turmas em atividade</h3>    <table class="table">      <thead class="thead">        <tr>          <th>Turmas</th>          <th>Data início</th>          <th>Data Final</th>        </tr>      </thead>      <tbody style="border-top: none;" *ngFor="let turma of turmas">        <tr *ngIf="turma.status == true">          <td>{{turma.nome}}</td>          <td>{{turma.dataDeInicioCurso | dateTime}}</td>          <td>{{turma.dataDeTerminoCurso | dateTime}}</td>        </tr>      </tbody>    </table>  </div></div></div>'
     var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CategoriasComponent', 'selector': 'app-categorias'},{'name': 'EditProfessorComponent', 'selector': 'app-edit-professor'},{'name': 'EditTurmaComponent', 'selector': 'app-edit-turma'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'FormProfessorComponent', 'selector': 'app-form-professor'},{'name': 'FormTurmaComponent', 'selector': 'app-form-turma'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'ListaProfessorComponent', 'selector': 'app-lista-professor'},{'name': 'ListaTurmaComponent', 'selector': 'app-lista-turma'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'NavComponent', 'selector': 'app-nav'},{'name': 'TecnologiasComponent', 'selector': 'app-tecnologias'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'HomeComponent'};

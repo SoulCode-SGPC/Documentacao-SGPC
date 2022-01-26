@@ -83,15 +83,19 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
+                                    <span class="modifier">Optional</span>
                                 <a href="#contato" >contato</a>
                             </li>
                             <li>
+                                    <span class="modifier">Optional</span>
                                 <a href="#disponibilidade" >disponibilidade</a>
                             </li>
                             <li>
+                                    <span class="modifier">Optional</span>
                                 <a href="#email" >email</a>
                             </li>
                             <li>
+                                    <span class="modifier">Optional</span>
                                 <a href="#formacao" >formacao</a>
                             </li>
                             <li>
@@ -99,12 +103,15 @@
                                 <a href="#id" >id</a>
                             </li>
                             <li>
+                                    <span class="modifier">Optional</span>
                                 <a href="#nome" >nome</a>
                             </li>
                             <li>
+                                    <span class="modifier">Optional</span>
                                 <a href="#status" >status</a>
                             </li>
                             <li>
+                                    <span class="modifier">Optional</span>
                                 <a href="#tecnologia" >tecnologia</a>
                             </li>
                         </ul>
@@ -132,6 +139,7 @@
                 <td class="col-md-4">
                     <a name="contato"></a>
                     <span class="name">
+                            <span class="modifier">Optional</span>
                         <span ><b>contato</b></span>
                         <a href="#contato"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -158,6 +166,7 @@
                 <td class="col-md-4">
                     <a name="disponibilidade"></a>
                     <span class="name">
+                            <span class="modifier">Optional</span>
                         <span ><b>disponibilidade</b></span>
                         <a href="#disponibilidade"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -184,6 +193,7 @@
                 <td class="col-md-4">
                     <a name="email"></a>
                     <span class="name">
+                            <span class="modifier">Optional</span>
                         <span ><b>email</b></span>
                         <a href="#email"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -210,6 +220,7 @@
                 <td class="col-md-4">
                     <a name="formacao"></a>
                     <span class="name">
+                            <span class="modifier">Optional</span>
                         <span ><b>formacao</b></span>
                         <a href="#formacao"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -263,6 +274,7 @@
                 <td class="col-md-4">
                     <a name="nome"></a>
                     <span class="name">
+                            <span class="modifier">Optional</span>
                         <span ><b>nome</b></span>
                         <a href="#nome"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -289,6 +301,7 @@
                 <td class="col-md-4">
                     <a name="status"></a>
                     <span class="name">
+                            <span class="modifier">Optional</span>
                         <span ><b>status</b></span>
                         <a href="#status"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -315,6 +328,7 @@
                 <td class="col-md-4">
                     <a name="tecnologia"></a>
                     <span class="name">
+                            <span class="modifier">Optional</span>
                         <span ><b>tecnologia</b></span>
                         <a href="#tecnologia"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -350,13 +364,13 @@
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">export class Professor {
   // colococar ! para não precisar declarar
   id?:string
-  nome!: string
-  formacao!: string
-  email!: string
-  contato!: string
-  tecnologia!: any
-  status!: boolean
-  disponibilidade!: number 
+  nome?: string
+  formacao?: string
+  email?: string
+  contato?: string
+  tecnologia?: any
+  status?: boolean
+  disponibilidade?: number
 }
 </code></pre>
     </div>

@@ -83,6 +83,7 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
+                                    <span class="modifier">Optional</span>
                                 <a href="#disponibilidade" >disponibilidade</a>
                             </li>
                             <li>
@@ -90,6 +91,7 @@
                                 <a href="#id" >id</a>
                             </li>
                             <li>
+                                    <span class="modifier">Optional</span>
                                 <a href="#nome" >nome</a>
                             </li>
                         </ul>
@@ -117,6 +119,7 @@
                 <td class="col-md-4">
                     <a name="disponibilidade"></a>
                     <span class="name">
+                            <span class="modifier">Optional</span>
                         <span ><b>disponibilidade</b></span>
                         <a href="#disponibilidade"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -170,6 +173,7 @@
                 <td class="col-md-4">
                     <a name="nome"></a>
                     <span class="name">
+                            <span class="modifier">Optional</span>
                         <span ><b>nome</b></span>
                         <a href="#nome"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -208,20 +212,20 @@
   categoria!: string
   professor1!: Professores
   professor2!: Professores
-  tecnologias!: any
+  tecnologias?: any
   dataDeInicioProcesso!: string
   dataDeInicioCurso!: string
   dataDeInicioProjeto!: string
   dataDeTerminoProcesso!: string
   dataDeTerminoCurso!: string
   dataDeTerminoProjeto!: string
-
+  status?: boolean
 }
 
 export class Professores {
   id?: string
-  nome!: string
-  disponibilidade!: number
+  nome?: string
+  disponibilidade?: number
 }
 
 </code></pre>
